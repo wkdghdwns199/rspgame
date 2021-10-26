@@ -1,0 +1,28 @@
+<html>
+	<head></head>
+	<body>HERE!
+		<button onclick="location.href='./backtest.html'"></button>
+	</body>
+</html>
+
+<script type="text/javascript">
+window.onpageshow = function (event)
+
+{
+
+	if ( event.persisted || (window.performance && window.performance.navigation.type == 2)) 
+
+	{
+
+		console.log('뒤로가기 클릭');
+
+	}
+
+	else {
+
+		alert('새로 열린 페이지');
+
+	}
+
+};
+</script>

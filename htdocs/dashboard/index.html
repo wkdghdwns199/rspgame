@@ -1,0 +1,34 @@
+<html>
+<head>
+<title></title>
+
+    	<script type="text/javascript">
+ 
+  function keydowncheck()
+{
+var result = true;
+var keycode = event.keyCode;
+if(123 == keycode || 116 == keycode){ //F12 키코드
+{
+  return false;
+}
+return result;
+}
+}
+
+
+
+</script>
+
+</head>
+<frameset  onkeydown="return keydowncheck();" rows="*%, 100%" border="0" >
+    <frame noresize scrolling="no" marginwidth="0" marginheight="0">
+    <frame src="../rspgame/main.php" name="main" marginwidth="0" marginheight="0">
+    <noframes>
+    <body>
+
+    </body>
+    </noframes>
+</frameset>
+</html>
+
